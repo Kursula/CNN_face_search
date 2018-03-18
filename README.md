@@ -39,14 +39,14 @@ I tested about half dozen different Keras pre-trained models and the VGG16 worke
 
 The 50 component PCA seems to be well enough for this application. Below is a cumulative explained variance ratio curve from the PCA model. 
 
-<img src="variance.png" alt="PCA variance ratio" style="width: 400px;"/>
+<img src="variance.png" alt="PCA variance ratio" width="400"/>
 
 PCA is not absolutely must for this program and one can run the comparisons using the raw 4096 dimensional vectors from the VGG16. However, it looks that those raw vectors contain much 'noise' that sometimes degrade the image search results, so I recommend using PCA.
 
 
 Below is sample of the search result. The image on the left was used as a reference for the search and the image on the right is the output from the algorithm. 
 
-<img src="sample.jpg" alt="Sample" style="width: 400px;"/>
+<img src="sample.jpg" alt="Sample" width="400"/>
 
 
 # Things to take into account
